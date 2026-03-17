@@ -5,9 +5,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Container } from "@/components/ui/Container";
 
 const stats = [
-  { value: 100, prefix: "Peste ", suffix: "", label: "clienți" },
-  { value: 20, prefix: "", suffix: "+", label: "ani experiență" },
-  { value: 450, prefix: "", suffix: "+", label: "proiecte finalizate" },
+  { value: 50, prefix: "", suffix: "+", label: "clienți" },
+  { value: 15, prefix: "", suffix: "+", label: "ani experiență" },
+  { value: 75, prefix: "", suffix: "+", label: "proiecte finalizate" },
 ];
 
 export function StatsSection() {

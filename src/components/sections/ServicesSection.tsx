@@ -7,40 +7,41 @@ import {
   Calculator,
   Building2,
   ShieldCheck,
-  Receipt,
   UsersRound,
+  Landmark,
+  FileCheck2,
 } from "lucide-react";
 
 const services = [
   {
     icon: Calculator,
     title: "Contabilitate financiară",
-    desc: "Înregistrări corecte, rapoarte lunare clare și închideri fără stres. (placeholder)",
+    desc: "Evidență completă, rapoarte clare și închideri la timp.",
   },
   {
-    icon: Receipt,
-    title: "Consultanță fiscală",
-    desc: "Optimizare legală, scenarii și recomandări proactive pentru decizii mai bune.",
+    icon: FileCheck2,
+    title: "Fiscalitate",
+    desc: "Declarații corecte și depuse la termen, cu atenție la fiecare detaliu.",
   },
   {
     icon: UsersRound,
-    title: "Salarizare & HR",
-    desc: "State de plată, declarații, contracte și suport pentru procesele de personal.",
+    title: "Salarizare & administrare personal",
+    desc: "State de plată, contracte și tot ce ține de gestionarea angajaților.",
   },
   {
-    icon: ShieldCheck,
-    title: "Audit financiar",
-    desc: "Revizuiri și verificări, pregătire documente și suport în controale.",
+    icon: Landmark,
+    title: "Relația cu autoritățile",
+    desc: "Suport în controale și comunicare cu instituțiile statului.",
   },
   {
     icon: Building2,
-    title: "Înființare firme",
-    desc: "De la idee la acte: structură, cod CAEN, înregistrare și setare procese.",
+    title: "Înființare și modificări firme",
+    desc: "Te ajutăm cu deschiderea și actualizarea firmei, fără drumuri inutile.",
   },
   {
     icon: BadgeCheck,
-    title: "Optimizare fiscală",
-    desc: "Strategii pentru cash-flow și taxe, cu plan de implementare etapizat.",
+    title: "Consultanță contabilă și fiscală",
+    desc: "Răspunsuri clare și recomandări aplicate, atunci când ai nevoie.",
   },
 ];
 
@@ -49,8 +50,16 @@ export function ServicesSection() {
     <Section
       id="servicii"
       eyebrow="Servicii"
-      title="Tot ce ai nevoie, de la contabilitate la consultanță strategică."
+      title="Servicii contabile complete, adaptate nevoilor afacerii tale."
     >
+      <Reveal>
+        <p className="mb-10 max-w-3xl text-pretty text-base leading-7 text-black/70 sm:text-lg">
+          Acoperim toate aspectele contabile și fiscale, de la evidența de zi cu
+          zi până la suport în decizii importante. Lucrăm organizat, respectăm
+          termenele și oferim explicații clare, fără complicații.
+        </p>
+      </Reveal>
+
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {services.map((s, idx) => (
           <Reveal key={s.title} delay={idx * 0.04}>

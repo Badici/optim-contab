@@ -5,12 +5,36 @@ import { Section } from "@/components/ui/Section";
 import { Reveal } from "@/components/ui/Reveal";
 
 const partners = [
-  { name: "Partener 1", logo: "/window.svg" },
-  { name: "Partener 2", logo: "/globe.svg" },
-  { name: "Partener 3", logo: "/file.svg" },
-  { name: "Partener 4", logo: "/vercel.svg" },
-  { name: "Partener 5", logo: "/next.svg" },
-  { name: "Partener 6", logo: "/globe.svg" },
+  {
+    name: "Micronix Plus",
+    logo: "/micronix.png",
+    blurb: "Echipamente și soluții profesionale de termografie/termoviziune.",
+  },
+  {
+    name: "Rowalt",
+    logo: "/rothenberger.png",
+    blurb: "Distribuitor de echipamente și consumabile pentru instalații.",
+  },
+  {
+    name: "Pizzacitta",
+    logo: "/pizzacitta.png",
+    blurb: "Pizzerie din București, cu focus pe gust autentic și livrare.",
+  },
+  {
+    name: "RoClean",
+    logo: "/roclean.png",
+    blurb: "Servicii profesionale de curățenie pentru birouri și spații comerciale.",
+  },
+  {
+    name: "Neosis Security",
+    logo: "/neosis.png",
+    blurb: "Sisteme de securitate: alarmă, supraveghere video și control acces.",
+  },
+  {
+    name: "Zone Medical Estet",
+    logo: "/zone-medical-estet.png",
+    blurb: "Clinică de estetică medicală și chirurgie plastică (București).",
+  },
 ];
 
 export function PartnersSection() {
@@ -18,28 +42,29 @@ export function PartnersSection() {
     <Section
       id="parteneri"
       eyebrow="Parteneri"
-      title="Încredere construită în timp, cu parteneri din industrii diverse."
+      title="Clienți care au ales stabilitatea și seriozitatea."
       tone="soft"
     >
       <div className="relative">
         <Reveal>
+          <p className="mb-8 max-w-3xl text-pretty text-base leading-7 text-black/70 sm:text-lg">
+            Lucrăm pe termen lung cu firme din domenii variate, oferind servicii
+            contabile corecte și comunicare directă. Relațiile noastre se bazează
+            pe încredere și consecvență, nu pe promisiuni.
+          </p>
+        </Reveal>
+
+        <Reveal>
           <div className="mb-8 overflow-hidden rounded-3xl border border-black/5 bg-white shadow-sm shadow-black/5">
             <div className="relative grid gap-8 p-7 md:grid-cols-[1.15fr_0.85fr] md:p-10">
               <div className="max-w-2xl">
-                <p className="inline-flex items-center gap-2 rounded-full bg-[color:var(--brand-teal)]/10 px-3 py-1 text-xs font-semibold text-[color:var(--brand-teal)] ring-1 ring-[color:var(--brand-teal)]/15">
-                  Parteneri
-                </p>
                 <h3 className="mt-4 text-balance text-2xl font-semibold leading-tight text-[color:var(--brand-ink)] sm:text-3xl">
-                  Construim parteneriate pe termen lung, cu procese clare și
-                  comunicare rapidă.
+                  Colaborări construite în timp
                 </h3>
                 <p className="mt-3 text-pretty text-base leading-7 text-black/70 sm:text-lg">
-                  Lucrăm cu business-uri din eCommerce, servicii, producție și
-                  HoReCa. Mai jos sunt doar câteva exemple —{" "}
-                  <span className="font-semibold text-[color:var(--brand-ink)]">
-                    și mulți alții
-                  </span>
-                  .
+                  Avem clienți din eCommerce, servicii, producție și HoReCa. Mai
+                  jos sunt câteva exemple — alături de multe alte colaborări în
+                  desfășurare.
                 </p>
               </div>
 
@@ -70,8 +95,8 @@ export function PartnersSection() {
           {partners.map((p, idx) => (
             <Reveal key={`${p.name}-${idx}`} delay={idx * 0.03}>
               <div className="group rounded-3xl border border-black/5 bg-white p-7 text-center shadow-sm shadow-black/5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/10">
-                <div className="mx-auto grid h-16 w-40 place-items-center">
-                  <div className="relative h-14 w-36 opacity-70 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="mx-auto grid h-20 w-48 place-items-center">
+                  <div className="relative h-16 w-44 opacity-80 transition-opacity duration-300 group-hover:opacity-100">
                     <Image
                       src={p.logo}
                       alt={`Logo ${p.name}`}
@@ -83,9 +108,7 @@ export function PartnersSection() {
                 <p className="mt-4 text-sm font-semibold text-[color:var(--brand-ink)]">
                   {p.name}
                 </p>
-                <p className="mt-1 text-xs text-black/55">
-                  Logo placeholder (înlocuiește cu logo real)
-                </p>
+                <p className="mt-2 text-sm leading-6 text-black/65">{p.blurb}</p>
               </div>
             </Reveal>
           ))}

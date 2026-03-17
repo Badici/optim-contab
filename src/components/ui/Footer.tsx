@@ -23,8 +23,7 @@ export function Footer() {
               className="h-[100px] w-[100px] object-contain"
             />
             <p className="max-w-sm text-sm leading-6 text-black/70">
-              Optimizăm contabilitatea pentru decizii mai clare. Procese moderne,
-              comunicare rapidă și suport prietenos.
+            Optimizăm contabilitatea, oferind claritate, rapiditate și sprijin constant.
             </p>
           </div>
 
@@ -52,19 +51,15 @@ export function Footer() {
             </p>
             <div className="grid gap-2 text-black/70">
               <p>
-                <span className="font-medium text-black">Adresă:</span>{" "}
-                Str. Exemplu nr. 10, București (placeholder)
-              </p>
-              <p>
                 <span className="font-medium text-black">Telefon:</span>{" "}
-                <a className="hover:text-black" href="tel:+40000000000">
-                  +40 000 000 000
+                <a className="hover:text-black" href="tel:+40787819954">
+                  +40 787 819 954
                 </a>
               </p>
               <p>
                 <span className="font-medium text-black">Email:</span>{" "}
-                <a className="hover:text-black" href="mailto:contact@optimcontab.ro">
-                  contact@optimcontab.ro
+                <a className="hover:text-black" href="mailto:ancamoisescu2000@yahoo.com">
+                  ancamoisescu2000@yahoo.com
                 </a>
               </p>
             </div>
@@ -73,7 +68,6 @@ export function Footer() {
 
         <div className="flex flex-col gap-3 border-t border-black/5 py-6 text-xs text-black/60 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} OptimContab. Toate drepturile rezervate.</p>
-          <p>Site demo — texte și date placeholder.</p>
         </div>
       </Container>
     </footer>

@@ -10,7 +10,7 @@ export function CecarSection() {
     <Section
       id="ceccar"
       eyebrow="Acreditare"
-      title="Contabili acreditați CECCAR — rigoare, etică și standarde profesionale."
+      title="Contabili acreditați CECCAR — garanția unui lucru făcut corect."
       tone="soft"
     >
       <div className="grid items-center gap-10 lg:grid-cols-2">
@@ -39,9 +39,9 @@ export function CecarSection() {
           <div className="space-y-5 text-black/75">
             <p className="text-pretty text-lg leading-8">
               Echipa noastră include profesioniști acreditați CECCAR (Corpul
-              Experților Contabili și Contabililor Autorizați din România) —
-              un reper de competență și responsabilitate în domeniul
-              financiar‑contabil. (text placeholder)
+              Experților Contabili și Contabililor Autorizați din România), ceea
+              ce înseamnă respectarea standardelor profesionale, responsabilitate
+              și atenție la detalii în fiecare lucrare.
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm shadow-black/5">
@@ -50,10 +50,10 @@ export function CecarSection() {
                   aria-hidden="true"
                 />
                 <p className="mt-2 font-semibold text-[color:var(--brand-ink)]">
-                  Standard
+                  Standarde
                 </p>
                 <p className="mt-1 text-sm text-black/70">
-                  Practici aliniate cerințelor profesiei.
+                  Respectăm cerințele profesiei, fără compromisuri.
                 </p>
               </div>
               <div className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm shadow-black/5">
@@ -65,7 +65,7 @@ export function CecarSection() {
                   Conformitate
                 </p>
                 <p className="mt-1 text-sm text-black/70">
-                  Documentație și procese curate, auditabile.
+                  Documente corecte, pregătite pentru orice verificare.
                 </p>
               </div>
               <div className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm shadow-black/5">
@@ -74,10 +74,10 @@ export function CecarSection() {
                   aria-hidden="true"
                 />
                 <p className="mt-2 font-semibold text-[color:var(--brand-ink)]">
-                  Dezvoltare
+                  Actualizare continuă
                 </p>
                 <p className="mt-1 text-sm text-black/70">
-                  Învățare continuă, ca să fii mereu la zi.
+                  Rămânem la zi cu schimbările legislative.
                 </p>
               </div>
             </div>

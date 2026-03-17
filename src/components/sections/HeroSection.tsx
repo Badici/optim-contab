@@ -23,7 +23,7 @@ export function HeroSection() {
               transition={{ duration: 0.6 }}
             >
               <span className="h-1.5 w-1.5 rounded-full bg-[color:var(--brand-teal)]" />
-              Premium. Clar. Digital.
+              Contabilitate fără complicații
             </motion.p>
 
             <motion.h1
@@ -32,7 +32,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.05 }}
             >
-              Contabilitate modernă pentru afaceri care cresc.
+              Servicii contabile de încredere pentru afaceri în creștere
             </motion.h1>
 
             <motion.p
@@ -41,8 +41,9 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.12 }}
             >
-              Optimizăm procesele contabile și fiscale astfel încât tu să iei
-              decizii mai rapide, cu mai puțin stres. (text placeholder)
+              Ne ocupăm corect și la timp de partea contabilă și fiscală, astfel
+              încât tu să te poți concentra pe dezvoltarea afacerii, fără griji
+              inutile.
             </motion.p>
 
             <motion.div
@@ -71,15 +72,15 @@ export function HeroSection() {
             >
               <div className="rounded-2xl border border-black/5 bg-white/70 p-4 shadow-sm shadow-black/5 backdrop-blur">
                 <p className="font-semibold text-[color:var(--brand-ink)]">Răspuns rapid</p>
-                <p className="mt-1">SLA clar, fără surprize.</p>
+                <p className="mt-1">Comunicare promptă și soluții clare, fără întârzieri.</p>
               </div>
               <div className="rounded-2xl border border-black/5 bg-white/70 p-4 shadow-sm shadow-black/5 backdrop-blur">
-                <p className="font-semibold text-[color:var(--brand-ink)]">Digital-first</p>
-                <p className="mt-1">Documente, rapoarte, totul simplu.</p>
+                <p className="font-semibold text-[color:var(--brand-ink)]">Transparență</p>
+                <p className="mt-1">Termene și costuri stabilite de la început, fără surprize.</p>
               </div>
               <div className="hidden rounded-2xl border border-black/5 bg-white/70 p-4 shadow-sm shadow-black/5 backdrop-blur sm:block">
                 <p className="font-semibold text-[color:var(--brand-ink)]">Parteneriat</p>
-                <p className="mt-1">Mai mult decât contabilitate.</p>
+                <p className="mt-1">Ne implicăm activ, nu doar executăm.</p>
               </div>
             </motion.div>
           </div>
@@ -119,9 +120,9 @@ export function HeroSection() {
                 transition={{ delay: 0.7, duration: 0.6 }}
               >
                 <p className="text-xs font-semibold text-[color:var(--brand-teal)]">
-                  Catchphrase
+                Claritate în cifre.
                 </p>
-                <p className="mt-1">„Contabilitate fără griji.”</p>
+                <p className="mt-1"> Liniște în decizii.</p>
               </motion.div>
             </motion.div>
           </div>

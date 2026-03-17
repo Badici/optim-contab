@@ -9,31 +9,31 @@ export function AboutSection() {
     <Section
       id="despre"
       eyebrow="Despre noi"
-      title="O echipă care îmbină rigoarea cu un stil de lucru modern."
+      title="O echipă care pune accent pe corectitudine și responsabilitate."
       tone="soft"
     >
       <div className="grid items-center gap-10 lg:grid-cols-2">
         <Reveal>
           <div className="space-y-5 text-black/75">
             <p className="text-pretty text-lg leading-8">
-              La OptimContab, transformăm contabilitatea într-un instrument de
-              control și creștere. Ne place claritatea: rapoarte ușor de înțeles,
-              termene respectate și recomandări aplicabile. (text placeholder)
+              La OptimContab, tratăm contabilitatea ca pe un instrument esențial
+              pentru controlul și stabilitatea afacerii. Oferim evidență clară,
+              respectăm termenele și venim cu explicații pe înțeles, astfel încât
+              să știi întotdeauna unde te afli.
             </p>
             <p className="text-pretty leading-7">
               Lucrăm cu antreprenori care vor predictibilitate și cu echipe care
-              apreciază comunicarea rapidă. Dacă îți dorești o colaborare
-              transparentă, cu procese digitale și suport prietenos, ești în
-              locul potrivit.
+              apreciază comunicarea directă. Ne dorim colaborări pe termen lung,
+              bazate pe seriozitate, transparență și încredere.
             </p>
 
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm shadow-black/5">
                 <p className="font-semibold text-[color:var(--brand-ink)]">
-                  Metodă
+                  Mod de lucru
                 </p>
                 <p className="mt-1 text-sm text-black/70">
-                  Fluxuri clare, fără „cutii negre”.
+                  Procese clare, ușor de urmărit.
                 </p>
               </div>
               <div className="rounded-2xl border border-black/5 bg-white p-4 shadow-sm shadow-black/5">
@@ -41,7 +41,7 @@ export function AboutSection() {
                   Parteneriat
                 </p>
                 <p className="mt-1 text-sm text-black/70">
-                  Recomandări proactive, nu doar înregistrări.
+                  Ne implicăm activ, nu doar înregistrăm.
                 </p>
               </div>
             </div>

@@ -7,29 +7,24 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Am trecut pe un flux digital complet și acum avem rapoarte lunare clare, fără ping‑pong pe email. Echipa OptimContab e foarte promptă.",
-    name: "Andrei Popescu",
-    role: "Founder, eCommerce",
+      "Apreciez seriozitatea și modul de lucru organizat. Totul este gestionat corect și la timp, iar comunicarea este simplă și directă. Este genul de colaborare pe care te poți baza.",
+    name: "Dan Niculae",
+    role: "Dan Andrei Niculae PFA",
   },
   {
     quote:
-      "Ne-au ajutat să optimizăm fiscal și să înțelegem impactul deciziilor înainte să le luăm. Colaborare transparentă și profesionistă.",
-    name: "Ioana Marinescu",
-    role: "CEO, servicii B2B",
-  },
-  {
-    quote:
-      "Salarizarea a devenit predictibilă, iar declarațiile sunt mereu la timp. Simți că ai un partener, nu doar un furnizor.",
-    name: "Mihai Ionescu",
-    role: "COO, producție",
-  },
-  {
-    quote:
-      "Comunicarea e rapidă și pe înțelesul nostru. În câteva luni am avut vizibilitate pe cash‑flow și pe costuri, cu recomandări concrete.",
-    name: "Elena Dumitru",
-    role: "Manager, HoReCa",
+      "Avem nevoie de stabilitate și predictibilitate în zona financiară, iar OptimContab livrează constant acest lucru. Rapoartele sunt clare, iar suportul oferit ne ajută să ne concentrăm pe creșterea business-ului.",
+    name: "Iustin Moisescu",
+    role: "CEO, Pretty SRL",
   },
 ];
+
+function initials(name: string) {
+  const parts = name.trim().split(/\s+/).filter(Boolean);
+  const a = parts[0]?.[0] ?? "";
+  const b = parts[1]?.[0] ?? "";
+  return (a + b).toUpperCase();
+}
 
 export function TestimonialsSection() {
   return (
@@ -60,8 +55,13 @@ export function TestimonialsSection() {
                     </p>
                     <p className="mt-0.5 text-xs text-black/60">{t.role}</p>
                   </div>
-                  <div className="hidden h-10 w-10 items-center justify-center rounded-2xl bg-[color:var(--brand-teal)]/10 text-[color:var(--brand-teal)] ring-1 ring-[color:var(--brand-teal)]/20 sm:flex">
-                    <span className="text-xs font-semibold">OK</span>
+                  <div
+                    className="hidden h-10 w-10 items-center justify-center rounded-2xl bg-[color:var(--brand-teal)]/10 text-[color:var(--brand-teal)] ring-1 ring-[color:var(--brand-teal)]/20 sm:flex"
+                    aria-label={`Inițiale: ${initials(t.name)}`}
+                  >
+                    <span className="text-xs font-semibold">
+                      {initials(t.name)}
+                    </span>
                   </div>
                 </figcaption>
               </figure>
