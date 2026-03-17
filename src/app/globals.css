@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Brand */
+  --brand-teal: #0ea5a4;
+  --brand-teal-2: #14b8a6;
+  --brand-champagne: #f5e6c8;
+  --brand-ink: #0b1220;
+  --surface: #ffffff;
+  --surface-2: #f7fafb;
+  --ring: rgba(20, 184, 166, 0.35);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-champagne: var(--brand-champagne);
+  --color-brand-ink: var(--brand-ink);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--surface-2);
+  color: var(--brand-ink);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+::selection {
+  background: rgba(20, 184, 166, 0.25);
+}
+
+/* Accessible focus rings */
+:where(a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+/* Prevent horizontal overflow due to decorative blobs */
+html,
+body {
+  overflow-x: clip;
+}
