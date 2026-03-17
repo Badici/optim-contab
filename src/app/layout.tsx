@@ -14,6 +14,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://optimcontab.ro"),
+  icons: {
+    icon: [
+      { url: "/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo.png", sizes: "48x48", type: "image/png" },
+      { url: "/logo.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: [{ url: "/logo.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/logo.png"],
+  },
   title: {
     default: "OptimContab — Contabilitate & consultanță fiscală",
     template: "%s — OptimContab",
