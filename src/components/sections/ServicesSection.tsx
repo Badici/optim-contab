@@ -6,9 +6,7 @@ import {
   BadgeCheck,
   Calculator,
   Building2,
-  ShieldCheck,
   UsersRound,
-  Landmark,
   FileCheck2,
 } from "lucide-react";
 
@@ -27,16 +25,6 @@ const services = [
     icon: UsersRound,
     title: "Salarizare & administrare personal",
     desc: "State de plată, contracte și tot ce ține de gestionarea angajaților.",
-  },
-  {
-    icon: Landmark,
-    title: "Relația cu autoritățile",
-    desc: "Suport în controale și comunicare cu instituțiile statului.",
-  },
-  {
-    icon: Building2,
-    title: "Înființare și modificări firme",
-    desc: "Te ajutăm cu deschiderea și actualizarea firmei, fără drumuri inutile.",
   },
   {
     icon: BadgeCheck,
@@ -60,7 +48,7 @@ export function ServicesSection() {
         </p>
       </Reveal>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
         {services.map((s, idx) => (
           <Reveal key={s.title} delay={idx * 0.04}>
             <div className="group relative h-full rounded-3xl border border-black/5 bg-white p-6 shadow-sm shadow-black/5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/10">
