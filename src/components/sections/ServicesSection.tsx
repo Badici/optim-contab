@@ -5,7 +5,6 @@ import { Reveal } from "@/components/ui/Reveal";
 import {
   BadgeCheck,
   Calculator,
-  Building2,
   UsersRound,
   FileCheck2,
 } from "lucide-react";

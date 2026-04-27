@@ -14,14 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://optimcontab.ro"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
-    icon: [
-      { url: "/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/logo.png", sizes: "48x48", type: "image/png" },
-      { url: "/logo.png", sizes: "96x96", type: "image/png" },
-    ],
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
     apple: [{ url: "/logo.png", sizes: "180x180", type: "image/png" }],
-    shortcut: ["/logo.png"],
+    shortcut: ["/favicon.ico"],
   },
   title: {
     default: "OptimContab — Contabilitate & consultanță fiscală",
@@ -30,6 +29,27 @@ export const metadata: Metadata = {
   description:
     "OptimContab oferă servicii premium de contabilitate, consultanță fiscală, salarizare și suport complet pentru afaceri. Rapid, clar și orientat pe rezultate.",
   applicationName: "OptimContab",
+  authors: [{ name: "OptimContab" }],
+  creator: "OptimContab",
+  publisher: "OptimContab",
+  category: "Business",
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: true,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   keywords: [
     "contabilitate",
     "contabil",
